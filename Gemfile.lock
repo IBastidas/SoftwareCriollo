@@ -11,8 +11,10 @@ GEM
       rack-test (>= 0.5.4)
       selenium-webdriver (>= 0.0.3)
     culerity (0.2.12)
+    daemons (1.1.4)
     database_cleaner (0.5.2)
     durran-validatable (2.0.1)
+    eventmachine (0.12.10)
     ffi (0.6.3)
       rake (>= 0.8.7)
     haml (3.0.18)
@@ -42,6 +44,10 @@ GEM
       rubyzip
     sinatra (1.0)
       rack (>= 1.0)
+    thin (1.2.7)
+      daemons (>= 1.0.9)
+      eventmachine (>= 0.12.6)
+      rack (>= 1.0.0)
     will_paginate (2.3.15)
 
 PLATFORMS
@@ -54,3 +60,4 @@ DEPENDENCIES
   mongoid
   rspec-rails
   sinatra
+  thin (= 1.2.7)

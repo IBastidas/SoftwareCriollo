@@ -5,6 +5,8 @@ gem 'haml'
 
 gem 'database_cleaner'
 gem 'mongoid'
+gem 'thin', '1.2.7'
+
 
 group :test do 
   gem 'capybara'
