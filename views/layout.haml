@@ -1,8 +1,17 @@
 !!! Strict
 %html
   %head
-    %title Da Web Site 
+    %title Software Criollo 
     %meta{"http-equiv"=>"Content-Type", :content=>"text/html; charset=utf-8"}
-    %link{ :rel => "stylesheet", :type =>"text/css", :href=>"/styles.css"}
+    %link{:href=>"/favicon.png", :rel =>"Shortcut Icon"}
+    %link{:href => "/stylesheet/styles.css", :rel => "stylesheet", :type => "text/css"} 
+    %script{:src => "http://use.typekit.com/eak7bxn.js", :type => "text/javascript"}
+    :javascript
+      try{Typekit.load();}catch(e){}
   %body
-    hello
+    #wrapper
+      #logo
+        %img{:src =>"/images/logo.png"}
+        
+      =yield  
+

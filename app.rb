@@ -20,7 +20,12 @@ class App < Sinatra::Base
   end
 
   get '/' do
-    haml :layout
+    haml :index
   end
+
+  get '/thanks' do
+    haml :thanks
+  end
+
 
 end

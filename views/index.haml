@@ -1,0 +1,11 @@
+#content{:style => "height: 370px;"}
+  %p Hace dos años asistimos a La Cumbre del Futuro en Caracas, Venezuela. Dónde tuvimos la oportunidad de hablar con  <a href = "http://twitter.com/#!/sacca" target="_blank">Chris Sacca. </a>
+  %img{:src =>"/images/player.png"}
+  %p Esto nos inspiró a crear temporadas de entrevistas a empredendedores que están en el camino a crear un mundo mejor con el desarrollo de software.
+  .ribbon
+    %p{:style => "margin-left: 65px; padding-top: 7px;"} ¿Quieres saber cuando los primeros capítulos estén listos?
+
+  %form
+    %input#s{:name => "s", :onblur => "if(this.value=='')this.value=this.defaultValue;", :onfocus => "if(this.value==this.defaultValue)this.value='';", :type => "text", :value => "Tu nombre completo"}/    
+    %input#s{:name => "s", :onblur => "if(this.value=='')this.value=this.defaultValue;", :onfocus => "if(this.value==this.defaultValue)this.value='';", :type => "text", :value => "Tu dirección de e-mail"}/
+    %input{:type => "submit", :value => "Si, avisenme", :class =>"submit"}/
