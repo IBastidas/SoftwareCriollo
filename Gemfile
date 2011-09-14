@@ -2,6 +2,8 @@ source "http://rubygems.org"
 
 gem 'sinatra'
 gem 'haml'
+gem 'heroku'
+gem 'foreman'
 
 gem 'database_cleaner'
 gem 'mongoid'
