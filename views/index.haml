@@ -1,4 +1,4 @@
-#content{:style => "height: 370px;"}
+#content{:style => "height: 460px;"}
   %p Hace dos años asistimos a La Cumbre del Futuro en Caracas, Venezuela. Dónde tuvimos la oportunidad de hablar con  <a href = "http://twitter.com/#!/sacca" target="_blank">Chris Sacca. </a>
   %img{:src =>"/images/player.png"}
   %p Esto nos inspiró a crear temporadas de entrevistas a empredendedores que están en el camino a crear un mundo mejor con el desarrollo de software.
@@ -8,4 +8,8 @@
   %form
     %input#s{:name => "s", :onblur => "if(this.value=='')this.value=this.defaultValue;", :onfocus => "if(this.value==this.defaultValue)this.value='';", :type => "text", :value => "Tu nombre completo"}/    
     %input#s{:name => "s", :onblur => "if(this.value=='')this.value=this.defaultValue;", :onfocus => "if(this.value==this.defaultValue)this.value='';", :type => "text", :value => "Tu dirección de e-mail"}/
-    %input{:type => "submit", :value => "Si, avisenme", :class =>"submit"}/
+    %input{:type => "submit", :value => "Si, avisenme", :class =>"submit"}
+  #social
+    %iframe{:allowTransparency => "true", :frameborder => "0", :scrolling => "no", :src => "//www.facebook.com/plugins/like.php?app_id=234312716620675&href=softwarecriollo.com&send=false&layout=standard&width=450&show_faces=true&action=like&colorscheme=light&font=arial&height=80", :style => "border:none; overflow:hidden; width:400px; height:80px;"}
+    %a.twitter-share-button{"data-count" => "horizontal", :href => "http://twitter.com/share"} Tweet
+    %script{:src => "http://platform.twitter.com/widgets.js", :type => "text/javascript"}
