@@ -6,6 +6,9 @@ require 'mongoid'
 
 Mongoid.load!("mongoid.yml")
 
+Mongoid.database = Mongo::Connection.new('staff.mongohq.com','10032').db('softwacreriollo')
+Mongoid.database.authenticate('softwarecriollo','letmein')
+
 class Person
   include Mongoid::Document
   field :nombre
