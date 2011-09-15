@@ -6,13 +6,11 @@ require 'mongoid'
 
 Mongoid.load!("mongoid.yml")
 
-
 class Person
   include Mongoid::Document
   field :nombre
   field :email
 end
-
 
 class App < Sinatra::Base
 
