@@ -4,9 +4,9 @@ require 'haml'
 require 'sass'
 require 'mongoid'
 
-Mongoid.load!("mongoid.yml")
+#Mongoid.load!("mongoid.yml")
 
-Mongoid.database = Mongo::Connection.new('staff.mongohq.com','10032').db('softwacreriollo')
+Mongoid.database = Mongo::Connection.new('staff.mongohq.com','10032').db('softwarecriollo')
 Mongoid.database.authenticate('softwarecriollo','letmein')
 
 class Person
