@@ -2,6 +2,17 @@ require 'rubygems'
 require 'sinatra/base'
 require 'haml'
 require 'sass'
+require 'mongoid'
+
+Mongoid.load!("mongoid.yml")
+
+
+class Person
+  include Mongoid::Document
+  field :nombre
+  field :email
+end
+
 
 class App < Sinatra::Base
 
@@ -13,6 +24,8 @@ class App < Sinatra::Base
       haml page, options.merge!(:layout => false)
     end
   end
+
+  set :haml, :format => :html5
 
   get '/styles.css' do 
     content_type 'text/css', :charset => 'utf-8'
@@ -27,5 +40,12 @@ class App < Sinatra::Base
     haml :thanks
   end
 
-
+  post '/thanks' do 
+    person = Person.create(params)
+    if person.save
+      haml :thanks
+    else
+      #
+    end
+  end
 end

@@ -1,0 +1,17 @@
+defaults: &defaults
+  host: localhost
+
+development:
+  <<: *defaults
+  database: sfotwarecriollo
+
+test:
+  <<: *defaults
+  database: softwarecriollo_test
+
+production:
+  host: staff.mongohq.com
+  port: 10032
+  username: softwarecriollo
+  password: letmein
+  database: softwarecriollo
