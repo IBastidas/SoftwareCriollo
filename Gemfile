@@ -13,4 +13,5 @@ gem "mongoid", "~> 2.2"
 group :test do 
   gem 'capybara'
   gem 'rspec-rails'
+  gem 'steak'
 end

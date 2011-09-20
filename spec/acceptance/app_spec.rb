@@ -1,4 +1,4 @@
-require File.dirname(__FILE__) + '/../spec_helper'
+require File.expand_path(File.join(File.dirname(__FILE__), '..', 'spec_helper'))
 
 feature "Sending a Form" do 
   scenario "should be able to send basic info" do 

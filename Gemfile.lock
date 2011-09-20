@@ -64,6 +64,8 @@ GEM
       rubyzip
     sinatra (1.0)
       rack (>= 1.0)
+    steak (1.1.0)
+      rspec (>= 1.3)
     term-ansicolor (1.0.6)
     thin (1.2.7)
       daemons (>= 1.0.9)
@@ -84,4 +86,5 @@ DEPENDENCIES
   mongoid (~> 2.2)
   rspec-rails
   sinatra
+  steak
   thin (= 1.2.7)
