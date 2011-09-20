@@ -11,7 +11,7 @@ gem 'thin', '1.2.7'
 gem "mongoid", "~> 2.2"
 
 group :test do 
-  gem 'capybara'
-  gem 'rspec-rails'
+  gem 'capybara', :git => 'git://github.com/jnicklas/capybara.git'
+  gem 'rspec'
   gem 'steak'
 end

@@ -9,7 +9,7 @@
   .ribbon
     %p{:style => "margin-left: 65px; padding-top: 7px;"} ¿Quieres saber cuando los primeros capítulos estén listos?
 
-  %form{:action => "/thanks", :method => "POST"}
+  %form{:action => "/suggestion", :method => "POST"}
     %input#s{:name => "nombre", :onblur => "if(this.value=='')this.value=this.defaultValue;", :onfocus => "if(this.value==this.defaultValue)this.value='';", :type => "text", :value => "Tu nombre completo"}/    
     %input#s{:name => "email", :onblur => "if(this.value=='')this.value=this.defaultValue;", :onfocus => "if(this.value==this.defaultValue)this.value='';", :type => "text", :value => "Tu dirección de e-mail"}/
     %input{:type => "submit", :value => "Si, avisenme", :class =>"submit"}

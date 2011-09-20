@@ -120,8 +120,12 @@ input {
 	background: -moz-linear-gradient(top,  #3D235D,  #5D3082); /* for firefox 3.6+ */ 	
 }
 
+.ref_link{
+        text-align: center;
+}
+
 a {
-	font-weight: bold;
+        font-size: 15px;
 	color: #5D3082;
 }
 

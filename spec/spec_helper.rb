@@ -1,5 +1,4 @@
 require File.join(File.dirname(__FILE__), '..', 'app.rb')
-
 require 'steak'
 require 'spec'
 require 'database_cleaner'
@@ -28,9 +27,8 @@ Spec::Runner.configure do |conf|
   conf.after(:each) do 
 #    DatabaseCleaner.clean
   end
-
   conf.include Rack::Test::Methods
-  conf.include Capybara
+  conf.include Capybara::DSL
   Capybara.app = App
 end
 

@@ -15,6 +15,11 @@ class Person
   field :email
 end
 
+class Suggestion
+  include Mongoid::Document
+  field :nombre
+end
+
 class App < Sinatra::Base
 
   set :public, File.join(File.dirname(__FILE__), 'public')  
@@ -41,10 +46,23 @@ class App < Sinatra::Base
     haml :thanks
   end
 
+  get '/suggestion' do
+    haml :suggestion
+  end
+
   post '/thanks' do 
+    suggestion = Suggestion.create(params)
+    if suggestion.save
+      haml :thanks
+    else
+      #
+    end
+  end
+
+  post '/suggestion' do 
     person = Person.create(params)
     if person.save
-      haml :thanks
+      haml :suggestion
     else
       #
     end
